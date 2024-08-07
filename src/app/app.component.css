@@ -1,0 +1,112 @@
+h1 {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Estilo para el contenedor principal */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* Estilo para la lista de Pokémon */
+nav {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Estilo para cada elemento de la lista */
+li {
+  background: #f5f5f5;
+  border: 1px solid #db2323;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 150px;
+  transition: transform 0.2s;
+}
+
+li:hover {
+  transform: scale(1.05);
+}
+
+/* Estilo para las imágenes de los Pokémon */
+li img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* Estilo para el texto del nombre */
+li p {
+  font-size: 1.2em;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+/* Footer styles */
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 1em;
+}
+
+.footer-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  gap: 15px;
+}
+
+.footer-links li {
+  display: inline;
+  font-size: 1.2em;
+  color: #ff0000; /* Color rojo para ambos elementos */
+  font-weight: 800;
+}
+
+.footer-links li:nth-child(2) {
+  font-size: 1.2em;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ffd700;
+}

@@ -1,0 +1,27 @@
+<h1>{{ title }}</h1>
+
+<main>
+  <section *ngIf="(pokemons$ | async) as pokemons; else noPokemons">
+    <nav>
+      <ul>
+        <li *ngFor="let pokemon of pokemons">
+          <p>{{ pokemon.name }}</p>
+          <img [src]="pokemon.sprite" alt="{{ pokemon.name }}">
+        </li>
+      </ul>
+    </nav>
+  </section>
+  <ng-template #noPokemons>
+    <p>No se pudo recuperar el pokemon</p>
+  </ng-template>
+</main>
+
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2024 PokeAPI. Todos los derechos reservados.</p>
+    <ul class="footer-links">
+      <li>Anthony Solano Lopez</li>
+      <li>Hecho con ❤</li>
+    </ul>
+  </div>
+</footer>
